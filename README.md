@@ -53,7 +53,7 @@ We can model our problem of knapsack packing as a genetic algorithm by creating 
 ### What does the genome look like for this problem?
 Defining the genetic representation for a problem like this, in addition to the fringe operation, is where some of the magic lies. But with many things in Computer Science, sometimes it's better ot just start simple and, once the scaffolding is complete and the straightforward solution is done, get creative afterwards. To begin, we can express our genome as an array of booleans. Each index `i` in the array corresponds to the `ith` object we're trying to pack in our sack; the boolean represents whether or not it's in the bag. While this representation may rub your intuitions the wrong way (won't this allow for invalid solutions in our population?) we can avoid choosing an invalid solution when we define our fitness function. 
 
-### What do thefringe operations look like in this ecosystem?
+### What do fringe operations look like in this ecosystem?
 The fringe operations we need to define are our mutation function and a cross-over function. 
 
 For our dead-simple genome: 
